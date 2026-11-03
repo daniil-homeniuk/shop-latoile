@@ -1,41 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="component-page">
-        <h1 class="main-header">Composants CSS</h1>
-        <div class="elements">
-            <h2>Des boutons</h2>
-            <button class="primary-button">Primaire</button>
-            <button class="secondary-button">Secondaire</button>
-        </div>
-        <div class="elements">
-            <h2>Un avatar</h2>
-            <img class="avatar" src="./assets/avatar.webp" alt="Avatar" />
-        </div>
-        <div class="elements">
-            <h2>Un lien</h2>
-            <a href="#" class="link">lien hypertexte</a>
-        </div>
-        <div class="elements">
-            <h2>Une carte avec icône</h2>
-            <div class="card">
-                <img src="./assets//icon.svg" alt="Icône" />
-                <p>Une icone</p>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header-logo">
+                <a>
+                    <img src="./assets/logo.svg" alt="Logo" />
+                    <h3>KOOLKICKS</h3>
+                </a>
             </div>
-        </div>
-        <div class="hero">
-            <h1>Un hero header</h1>
-            <p>Avec sa courte description</p>
+            <ul>
+                <li><a href="#">Nouveautés</a></li>
+                <li><a href="#">Rechercher</a></li>
+                <li><a href="#">Contacter</a></li>
+            </ul>
+            <div class="header-avatar">
+                <a class="primary-button">Mon panier</a>
+                <a href="#"><img src="./assets/avatar.jpg" class="avatar" alt="Avatar" /></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Nos dernières sneakers</h1>
+        <div class="cards-sneaker">
+            <article class="card-sneaker">
+                <img src="./assets/shoes-1.jpg" />
+                <div class="card-bottom">
+                    <div class="card-bottom-header">
+                        <h3>Nike</h3>
+                        <h4>120€</h4>
+                    </div>
+                    <p>Nos nouvelles chaussures présentent les dernières technologies, des tissus techniques et des lignes tendance. Livraison et retours gratuits.</p>
+                    <a class="primary-button">Ajouter au panier</a>
+                </div>
+            </article>
+            <article class="card-sneaker">
+                <img src="./assets/shoes-2.jpg" />
+                <div class="card-bottom">
+                    <div class="card-bottom-header">
+                        <h3>New balance</h3>
+                        <h4>110€</h4>
+                    </div>
+                    <p>Nos nouvelles chaussures présentent les dernières technologies, des tissus techniques et des lignes tendance. Livraison et retours gratuits.</p>
+                    <a class="primary-button">Ajouter au panier</a>
+                </div>
+            </article>
+            <article class="card-sneaker">
+                <img src="./assets/shoes-1.jpg" />
+                <div class="card-bottom">
+                    <div class="card-bottom-header">
+                        <h3>Avia</h3>
+                        <h4>100€</h4>
+                    </div>
+                    <p>Nos nouvelles chaussures présentent les dernières technologies, des tissus techniques et des lignes tendance. Livraison et retours gratuits.</p>
+                    <a class="primary-button">Ajouter au panier</a>
+                </div>
+            </article>
+            <article class="card-sneaker">
+                <img src="./assets/shoes-1.jpg" />
+                <div class="card-bottom">
+                    <div class="card-bottom-header">
+                        <h3>adidas</h3>
+                        <h4>110€</h4>
+                    </div>
+                    <p>Nos nouvelles chaussures présentent les dernières technologies, des tissus techniques et des lignes tendance. Livraison et retours gratuits.</p>
+                    <a class="primary-button">Ajouter au panier</a>
+                </div>
+            </article>
         </div>
     </main>
-  </body>
+    <footer>
+        <p>© KOOLKICKs 2023</p>
+    </footer>
+</body>
 </html>
