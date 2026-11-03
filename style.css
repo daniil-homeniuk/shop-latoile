@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100%;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+
+p {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.component-page {
+    text-align: center;
+}
+
+.main-header {
+    margin: 5rem 0;
+}
+
+.elements {
+    margin-bottom: 4rem;
+}
+
+.primary-button {
+    background-color: #8005f2;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.secondary-button {
+    background-color: #fff;
+    color: #8005f2;
+    padding: 8px 16px;
+    border: 1px solid #8005f2;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: #8005f2;
+    height: 200px;
+    width: 200px;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+.card img {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.card p {
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.hero {
+    background: url('./assets/hero.jpg') no-repeat center center;
+    background-size: cover;
+    aspect-ratio: 2852 / 1900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1,
+.hero p {
+    color: #fff;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 0.5rem;
+}
