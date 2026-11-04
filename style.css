@@ -231,6 +231,7 @@ main .sneakers-title {
 .card-sneaker img {
     width: 100%;
     height: 203px;
+    object-fit: cover;
 }
 
 .card-bottom {
@@ -273,4 +274,68 @@ footer {
     justify-content: center;
     padding: 8rem 0 0rem 0;
     background: #dcdad6;
+}
+
+@media (max-width: 900px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul li {
+        padding: 0.5rem;
+    }
+
+    .hero {
+        aspect-ratio: auto;
+        min-height: 512px;
+    }
+
+    .cards-sneaker {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .sneakers-title {
+        padding: 2rem 0 !important;
+    }
+}
+
+@media (max-width: 520px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-avatar {
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .header-avatar a {
+        margin-right: 0;
+    }
+
+    .cards-sneaker {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        min-height: 320px;
+    }
+
+    footer {
+        padding: 4rem 1rem 1rem;
+    }
 }
