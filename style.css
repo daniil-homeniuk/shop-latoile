@@ -398,6 +398,7 @@ footer {
 
     .menu-toggle-checkbox:checked ~ .header-avatar {
         max-height: 80px;
+        margin-top: 1rem;
     }
 
     .hero {
