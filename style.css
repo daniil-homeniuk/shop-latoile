@@ -112,7 +112,7 @@ a:hover {
 }
 
 .hero {
-    background: url('./assets/bg-hero.png') no-repeat center center;
+    background: url('./assets/bg-hero.webp') no-repeat center center;
     background-size: cover;
     aspect-ratio: 2852 / 1900;
     display: flex;
