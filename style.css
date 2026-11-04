@@ -198,9 +198,15 @@ main {
     background: #dcdad6;
 }
 
-main h1 {
+main h1,
+main .sneakers-title {
     text-align: center;
     padding: 4rem 0;
+}
+
+main .sneakers-title {
+    font-size: 48px;
+    margin-bottom: 0;
 }
 
 .card {
