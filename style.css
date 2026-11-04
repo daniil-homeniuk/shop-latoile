@@ -173,6 +173,23 @@ nav ul li{
     padding: 1rem;
 }
 
+.menu-toggle-checkbox,
+.menu-toggle {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .header-avatar {
     display: flex;
     justify-content: center;
@@ -277,18 +294,107 @@ footer {
 }
 
 @media (max-width: 900px) {
-    nav {
+    .site-navigation {
+        display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    nav ul {
-        order: 1;
+    .menu-toggle-checkbox {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: relative;
+        width: 24px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .menu-toggle-icon {
+        display: block;
+        position: relative;
+        width: 24px;
+        height: 20px;
+        background: linear-gradient(
+            to bottom,
+            #000 0 2px,
+            transparent 2px 9px,
+            #000 9px 11px,
+            transparent 11px 18px,
+            #000 18px 20px
+        );
+        transition: background 0.3s ease;
+    }
+
+    .menu-toggle-icon::before,
+    .menu-toggle-icon::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background-color: #000;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle-icon::before {
+        top: 0;
+    }
+
+    .menu-toggle-icon::after {
+        bottom: 0;
+    }
+
+    #menu-toggle:checked + .menu-toggle .menu-toggle-icon {
+        background: transparent;
+    }
+
+    #menu-toggle:checked + .menu-toggle .menu-toggle-icon::before {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    #menu-toggle:checked + .menu-toggle .menu-toggle-icon::after {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .header-avatar,
+    .site-navigation ul {
         width: 100%;
-        justify-content: center;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.35s ease;
     }
 
-    nav ul li {
-        padding: 0.5rem;
+    .header-avatar {
+        display: flex;
+    }
+
+    .site-navigation ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-8px);
+    }
+
+    .menu-toggle-checkbox:checked ~ ul,
+    .menu-toggle-checkbox:checked ~ .header-avatar {
+        max-height: 300px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-toggle-checkbox:checked ~ ul {
+        transform: translateY(0);
+    }
+
+    .menu-toggle-checkbox:checked ~ .header-avatar {
+        max-height: 80px;
     }
 
     .hero {
